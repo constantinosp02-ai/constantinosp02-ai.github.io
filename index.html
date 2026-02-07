@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantinos Papacharalambous</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #333333;
+            --muted: #555555;
+            --link: #2471a3;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 16px;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px 0;
+            max-width: 800px;
+            margin: 0 auto;
+            gap: 24px;
+            padding-right: 24px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-size: 0.95rem;
+            font-weight: 400;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--link); }
+        nav a.active { font-weight: 500; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        .content { padding: 40px 0 80px; }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            margin-bottom: 4px;
+        }
+        h1 strong { font-weight: 700; }
+        .title {
+            color: var(--muted);
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 32px;
+        }
+        .about-layout {
+            display: flex;
+            gap: 48px;
+            align-items: flex-start;
+        }
+        .about-text { flex: 1; min-width: 0; }
+        .about-photo { flex-shrink: 0; width: 220px; }
+        .about-photo img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 3/4;
+        }
+        .photo-caption {
+            margin-top: 8px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.82rem;
+            color: var(--muted);
+            text-align: center;
+            line-height: 1.4;
+        }
+        .about-text p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+        .about-text a {
+            color: var(--link);
+            text-decoration: none;
+            font-weight: 400;
+        }
+        .about-text a:hover { text-decoration: underline; }
+        footer {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        footer a { color: var(--link); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 640px) {
+            .about-layout { flex-direction: column-reverse; gap: 28px; }
+            .about-photo { width: 180px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="index.html" class="active">About</a>
+        <a href="cv.html">CV</a>
+    </nav>
+
+    <div class="content">
+        <h1><strong>Constantinos</strong> Papacharalambous</h1>
+        <p class="title">UCL Mechanical Engineering</p>
+
+        <div class="about-layout">
+            <div class="about-text">
+                <p>
+                    I am a Mechanical Engineering master's student at <a href="https://www.ucl.ac.uk/" target="_blank">University College London</a>, where I am currently leading a year-long biomedical engineering project in collaboration with <a href="https://www.moorfields.nhs.uk/" target="_blank">Moorfields Eye Hospital</a>. We are developing a pressure-sensing injection needle for real-time intraocular pressure monitoring during the treatment of severe hypotony — a condition where the eye partially loses its structural volume. The goal is to enable clinicians to restore eye pressure safely in a single session, rather than over weeks of repeat visits.
+                </p>
+
+                <p>
+                    I chose engineering because I believe the most fulfilling work comes from solving meaningful problems — ones you genuinely care about. I am not driven by a fixed career title. My ambition is guided by a simple compass: to wake up every day ready to do what I love. Engineering gives me the analytical tools to break down complex challenges, but what excites me is applying them at the intersection of things I care about — whether that's health, sport, or technology.
+                </p>
+
+                <p>
+                    Outside of academics, I am an elite triathlete, currently ranked <strong>#1 in Cyprus</strong> for my age group in Ironman competition, having raced across Cyprus, Spain, the UK and the US. Sport has shaped how I approach everything — with discipline, patience, and an appreciation for the process over the outcome.
+                </p>
+
+                <p>
+                    I have also founded two companies: <a href="https://github.com/constantinosp02-ai/velum-sport-swap" target="_blank">Velum</a>, an endurance sports marketplace currently in UCL's pre-accelerator programme, and GCP Tech, an NFC business card venture. I am drawn to building things from scratch — particularly in environments with high ownership, fast iteration, and close collaboration with ambitious people. A year spent in California solidified this, immersing me in a culture where experimentation and learning from failure were actively encouraged.
+                </p>
+
+                <p>
+                    I also served 14 months in the <strong>Cyprus National Guard Special Forces</strong>, finishing ranked 2nd out of 60 and promoted to platoon leader. The most valuable lesson I took away was to value my time — and to act on what I really want.
+                </p>
+
+                <p>
+                    Beyond engineering and triathlon, some of my other interests include surfing, photography, reading, and chess.
+                </p>
+            </div>
+
+            <div class="about-photo">
+                <img src="photo.jpg" alt="Constantinos Papacharalambous">
+                <div class="photo-caption">
+                    London, UK
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Constantinos Papacharalambous. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+</footer>
+
+</body>
+</html>

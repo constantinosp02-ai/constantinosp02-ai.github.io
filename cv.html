@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Constantinos Papacharalambous</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #333333;
+            --muted: #555555;
+            --link: #2471a3;
+            --border: #dee2e6;
+            --section-color: #2471a3;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            font-size: 15px;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px 0;
+            max-width: 800px;
+            margin: 0 auto;
+            gap: 24px;
+            padding-right: 24px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-size: 0.95rem;
+            font-weight: 400;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--link); }
+        nav a.active { font-weight: 500; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        .content { padding: 40px 0 80px; }
+
+        .cv-header { margin-bottom: 8px; }
+        .cv-header h1 {
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: -0.01em;
+        }
+        .cv-header h1 strong { font-weight: 700; }
+        .cv-contact {
+            color: var(--muted);
+            font-size: 0.88rem;
+            margin-top: 4px;
+        }
+        .cv-contact a { color: var(--link); text-decoration: none; }
+        .cv-contact a:hover { text-decoration: underline; }
+
+        .cv-section { margin-top: 36px; }
+        .cv-section-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--section-color);
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--section-color);
+            margin-bottom: 20px;
+        }
+
+        .cv-entry { margin-bottom: 22px; }
+        .cv-entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .cv-entry-header h3 {
+            font-size: 0.98rem;
+            font-weight: 500;
+        }
+        .cv-entry-header .cv-location {
+            font-size: 0.85rem;
+            color: var(--muted);
+            font-weight: 300;
+        }
+        .cv-role {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--text);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .cv-role .cv-dates {
+            color: var(--muted);
+            font-weight: 300;
+            font-size: 0.85rem;
+        }
+        .cv-details {
+            margin-top: 6px;
+            padding-left: 16px;
+        }
+        .cv-details li {
+            margin-bottom: 3px;
+            color: var(--muted);
+            font-size: 0.88rem;
+            line-height: 1.55;
+        }
+
+        .cv-simple {
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        .cv-simple strong {
+            font-weight: 500;
+            color: var(--text);
+        }
+        .cv-simple p { margin-bottom: 6px; }
+
+        footer {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        footer a { color: var(--link); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 640px) {
+            .cv-entry-header { flex-direction: column; }
+            .cv-role { flex-direction: column; }
+        }
+        @media print {
+            nav, footer { display: none; }
+            .content { padding: 0; }
+            body { font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="index.html">About</a>
+        <a href="cv.html" class="active">CV</a>
+    </nav>
+
+    <div class="content">
+        <div class="cv-header">
+            <h1><strong>Constantinos</strong> Papacharalambous</h1>
+            <p class="cv-contact">
+                <a href="mailto:constantinosp02@gmail.com">constantinosp02@gmail.com</a> | +447389809680
+            </p>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="cv-section">
+            <div class="cv-section-title">Education</div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <h3>University College London</h3>
+                    <span class="cv-location">London, UK</span>
+                </div>
+                <div class="cv-role">
+                    <span>MEng Mechanical Engineering</span>
+                    <span class="cv-dates">Sep 2022 – Present</span>
+                </div>
+                <ul class="cv-details">
+                    <li>Predicted Classification: First Class (Graduating June 2026)</li>
+                    <li>Developing the first pressure sensing needle in collaboration with Moorfield's eye hospital, to treat hypotony (Team leader)</li>
+                </ul>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <h3>University of California, Santa Barbara</h3>
+                    <span class="cv-location">California, USA</span>
+                </div>
+                <div class="cv-role">
+                    <span>Education Abroad Programme Exchange Student</span>
+                    <span class="cv-dates">Sep 2024 – Jun 2025</span>
+                </div>
+                <ul class="cv-details">
+                    <li>Chosen for exchange programme upon outstanding 1st year result (80%)</li>
+                    <li>Extra modules: Financial Accounting, Financial Management, Mathematics of Fixed Income markets, Business strategy</li>
+                </ul>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <h3>The English School Nicosia</h3>
+                    <span class="cv-location">Nicosia, Cyprus</span>
+                </div>
+                <div class="cv-role">
+                    <span>Secondary School</span>
+                    <span class="cv-dates">Sep 2014 – Aug 2021</span>
+                </div>
+                <ul class="cv-details">
+                    <li>A-Levels: Mathematics (A*), Further Mathematics (A*), Physics (A*), and Computer Science (A*)</li>
+                    <li>Cypriot High School Diploma: 20/20 (receiving a national scholarship to study in the UK)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- WORK EXPERIENCE -->
+        <div class="cv-section">
+            <div class="cv-section-title">Work Experience</div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <h3>MTS Globe</h3>
+                    <span class="cv-location">Larnaca, Cyprus</span>
+                </div>
+                <div class="cv-role">
+                    <span>Strategy and Operations Intern</span>
+                    <span class="cv-dates">Jul 2025 – Sep 2025</span>
+                </div>
+                <ul class="cv-details">
+                    <li>Implemented flight tracking APIs into n8n and leveraged AI, to optimise airport-to-hotel transfer logistics, improving route efficiency and scheduling, resulting in a 10% cost reduction</li>
+                    <li>Analysed past contract terms to be able to contribute to hotel contract negotiations and secure favourable booking rates</li>
+                </ul>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <h3>Cyprus Stock Exchange</h3>
+                    <span class="cv-location">Nicosia, Cyprus</span>
+                </div>
+                <div class="cv-role">
+                    <span>Financial Analysis Intern</span>
+                    <span class="cv-dates">Jun 2025 – Jul 2025</span>
+                </div>
+                <ul class="cv-details">
+                    <li>Assisted in analysing an external valuation report for a thinly traded holding company (€3) that supported the assessment of a request to lift intraday trading limits to reflect its true market value (€900)</li>
+                    <li>Applied technological and analytical skills to support the daily updating and validation of market indexes, ensuring data accuracy</li>
+                </ul>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <h3>MTS Globe</h3>
+                    <span class="cv-location">Palma, Spain</span>
+                </div>
+                <div class="cv-role">
+                    <span>Business Intelligence Analyst Intern</span>
+                    <span class="cv-dates">Aug 2024 – Sep 2024</span>
+                </div>
+                <ul class="cv-details">
+                    <li>Participated in the future strategy meeting of the company that happens every 5 years with industry professionals</li>
+                    <li>Delivered actionable insights to drive strategic decision-making using SQL and Power BI, including service tailoring</li>
+                </ul>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <h3>Argus</h3>
+                    <span class="cv-location">Nicosia, Cyprus</span>
+                </div>
+                <div class="cv-role">
+                    <span>Asset Management Intern</span>
+                    <span class="cv-dates">Jun 2024 – Jul 2024</span>
+                </div>
+                <ul class="cv-details">
+                    <li>Conducted detailed industry research across the technology sector, specialising in semiconductors</li>
+                    <li>Managed client data and maintained the accuracy of portfolio records using financial software, including Bloomberg</li>
+                    <li>Contributed to 5-page investment report on technology company, influencing investment, by executing a DCF valuation</li>
+                </ul>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <h3>GCP Tech</h3>
+                    <span class="cv-location">London, UK</span>
+                </div>
+                <div class="cv-role">
+                    <span>Founder</span>
+                    <span class="cv-dates">Sep 2023 – Jan 2025</span>
+                </div>
+                <ul class="cv-details">
+                    <li>Founded and managed a business specializing in NFC-enabled products, overseeing all aspects from concept to execution</li>
+                    <li>Handled operational efficiency, supplier and client communications, marketing, financial planning, inventory, and order fulfillment, driving business growth and profitability (over 800% profit margin)</li>
+                    <li>Secured a major partnership with the largest real estate company in Cyprus, along with other individuals and companies</li>
+                </ul>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <h3>Deloitte</h3>
+                    <span class="cv-location">Nicosia, Cyprus</span>
+                </div>
+                <div class="cv-role">
+                    <span>Assurance Intern</span>
+                    <span class="cv-dates">Sep 2023</span>
+                </div>
+                <ul class="cv-details">
+                    <li>Applied guidelines to understand bank loan stagging and account management, such as IFRS9</li>
+                    <li>Reviewed sustainability reports (Including the report of QNB) to determine if they are up to standard</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- LEADERSHIP EXPERIENCE -->
+        <div class="cv-section">
+            <div class="cv-section-title">Leadership Experience</div>
+
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <h3>National Guard of Cyprus (Military Service)</h3>
+                    <span class="cv-location">Nicosia, Cyprus</span>
+                </div>
+                <div class="cv-role">
+                    <span>Special Forces Platoon Leader</span>
+                    <span class="cv-dates">Jul 2021 – Sep 2022</span>
+                </div>
+                <ul class="cv-details">
+                    <li>Faced various challenges, developing decision-making, risk evaluation and teamwork</li>
+                    <li>Ranked 2/60 in the special forces and promoted to leader of the 2nd platoon gaining leadership skills</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- EXTRA CURRICULAR ACTIVITIES -->
+        <div class="cv-section">
+            <div class="cv-section-title">Extra Curricular Activities</div>
+            <div class="cv-simple">
+                <p><strong>Bloomsbury startup academy:</strong> Selected for an intensive startup incubator programme that supports me in building my own venture through practical workshops and the opportunity to learn from inspiring founders and VCs (November 2025 start)</p>
+                <p><strong>Societies:</strong> 180 degrees consulting, UCL Entrepreneurship society, UCL Business society, UCSB investment advisory society, UCL running, cycling and triathlon societies, UCL Artificial Intelligence society</p>
+                <p><strong>Extra:</strong> Competitive Ironman triathlon athlete (ranked 1st in Cyprus for my age group), Organising sport fundraising events</p>
+                <p><strong>Skills:</strong> MATLAB (proficient), Python (Proficient), Microsoft Office (e.g. Excel, Power point, Word)</p>
+                <p><strong>Languages:</strong> English (Native), Greek (Native), Spanish (Basic), German (Basic)</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Constantinos Papacharalambous. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+</footer>
+
+</body>
+</html>
